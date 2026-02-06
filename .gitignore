@@ -1,6 +1,39 @@
 # gitignore template for LangChain products, e.g., LangGraph, LangSmith
 # website: https://www.langchain.com/
 # website: https://www.langchain.com/langgraph
+# Python 가상환경
+.venv/
+venv/
 
-# LangGraph
-.langgraph_api/
+# 환경 변수
+.env
+.env/*
+
+# RAG 관련 캐시 / 임베딩
+.rag_cache/
+.rag_embeddings/
+.rag_index/
+.rag_logs/
+
+# Python 바이트 코드
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# 임시 파일
+*.log
+*.tmp
+*.bak
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
